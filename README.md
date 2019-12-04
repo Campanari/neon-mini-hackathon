@@ -9,6 +9,7 @@ Hello everyone, and welcome to our Neon Team's mini-hackathon. It's a pretty sim
 ## What are the goals?
 * Practice clean code
 * Practice SOLID principles
+* Fulfill business requirements
 * Have some fun! :)
 
 ## What are the rules?
@@ -19,6 +20,13 @@ Hello everyone, and welcome to our Neon Team's mini-hackathon. It's a pretty sim
 * Use all the fields already present in the entities
 * You can remap the properties (for example, use UserId instead of User in the entities) if you find it better to work with
 * That's pretty much it, go crazy and get it done
+
+## Business Requirements
+* You must be able to create a blog post
+* You must be able to write comments to a blog post
+* A blog post must have a title, an author and a content. They might also have comments and tags
+* We should be able to search posts by tags, authors and title
+* You must persist all the information somewhere
 
 ## What are the evaluation criteria?
 * Clean code
