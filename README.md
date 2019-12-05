@@ -17,7 +17,7 @@ Hello everyone, and welcome to our Neon Team's mini-hackathon. It's a pretty sim
 * Use whatever libraries you want
 * Use whatever persistence method you want
 * Use all the fields already present in the entities
-* You can remap the properties (for example, use UserId instead of User in the entities) if you find it better to work with
+* You can create more fields on the entities to fill the business requirements, the current ones are there to help you get started (and you MUST use them, they are required)
 * You can change (create, delete, whatever) the routes on the controllers as much as you like, the current ones are only examples to help you get started
 * That's pretty much it, go crazy and get it done
 
