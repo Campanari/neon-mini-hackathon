@@ -21,7 +21,7 @@ Hello everyone, and welcome to our Neon Team's mini-hackathon. It's a pretty sim
 * You can change (create, delete, whatever) the routes on the controllers as much as you like, the current ones are only examples to help you get started
 * That's pretty much it, go crazy and get it done
 
-## Business Requirements
+## What are the business requirements?
 * You must be able to create a blog post
 * You must be able to write comments to a blog post
 * A blog post must have a title, an author and a content. They might also have comments and tags
