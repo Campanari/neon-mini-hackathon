@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace NeonHackathon.Api.Controllers
 {
     [ApiController]
-    [Route(Route("[controller]")]
+    [Route("[controller]")]
     public class TagsController : ControllerBase
     {
         [HttpGet]
