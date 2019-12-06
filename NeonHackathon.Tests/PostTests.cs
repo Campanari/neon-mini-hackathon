@@ -11,19 +11,19 @@ namespace NeonHackthon.Tests
         }
 
         [Test]
-        public void ShouldThrowExceptionWhenCreateBlogWithInvalidUser()
+        public void ShouldThrowsExceptionWhenCreateBlogWithInvalidUser()
         {
 
         }
 
         [Test]
-        public void ShouldThrowExceptionWhenCreateBlogWithNoContent()
+        public void ShouldThrowsExceptionWhenCreateBlogWithNoContent()
         {
 
         }
 
         [Test]
-        public void ShouldThrowExceptionWhenCreateBlogWithNoTitle()
+        public void ShouldThrowsExceptionWhenCreateBlogWithNoTitle()
         {
 
         }
@@ -35,7 +35,19 @@ namespace NeonHackthon.Tests
         }
 
         [Test]
+        public void ShouldThrowsExceptionWhenWriteCommentToPostWithEmptyComment()
+        {
+            
+        }
+
+        [Test]
         public void ShouldAddTagToPost()
+        {
+            
+        }
+        
+        [Test]
+        public void ShouldThrowsExceptionWhenAddTagToPostWithEmptyTag()
         {
             
         }
@@ -57,7 +69,5 @@ namespace NeonHackthon.Tests
         {
 
         }
-
-
     }
 }
