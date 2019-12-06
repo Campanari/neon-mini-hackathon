@@ -22,15 +22,15 @@ namespace NeonHackathon.Api.Controllers
         }
 
         [HttpGet]
-        [Route("/user")]
-        public async Task<IActionResult> GetAllByUserId([FromQuery] int userId)
+        [Route("/user/{userId}")]
+        public async Task<IActionResult> GetAllByUserId(int userId)
         {
             throw new NotImplementedException("Implement me!");
         }
         
         [HttpGet]
-        [Route("/post")]
-        public async Task<IActionResult> GetAllByPostId([FromQuery] int postId)
+        [Route("/post/{postId}")]
+        public async Task<IActionResult> GetAllByPostId(int postId)
         {
             throw new NotImplementedException("Implement me!");
         }
