@@ -29,7 +29,7 @@ namespace NeonHackathon.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(int id)
+        public async Task<IActionResult> Post(AddPostDto dto)
         {
             throw new NotImplementedException("Implement me!");
         }

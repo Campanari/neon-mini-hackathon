@@ -46,7 +46,7 @@ namespace NeonHackathon.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(int id)
+        public async Task<IActionResult> Post([FromBody] AddCommentDto comment)
         {
             throw new NotImplementedException("Implement me!");
         }
