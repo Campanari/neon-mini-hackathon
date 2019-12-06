@@ -1,6 +1,8 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using NeonHackathon.Domain.Entities;
+using NeonHackathon.Domain.Interfaces;
 
 namespace NeonHackathon.Api.Controllers
 {
@@ -8,10 +10,18 @@ namespace NeonHackathon.Api.Controllers
     [Route("[controller]")]
     public class CommentsController : ControllerBase
     {
+        private readonly IUnitOfWork _unitOfWork;
+
+        public CommentsController(IUnitOfWork unitOfWork) 
+        {
+            _unitOfWork = unitOfWork;
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            throw new NotImplementedException("Implement me!");
+            var comments = await _unitOfWork.Repository<Comment>().GetAllAsync();
+            return Ok(comments);
         }
 
         [HttpGet]
