@@ -5,6 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\NeonHackathon.Data\NeonHackathon.Data.csproj" />
       <ProjectReference Include="..\NeonHackathon.Domain\NeonHackathon.Domain.csproj" />
     </ItemGroup>
 

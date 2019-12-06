@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NeonHackathon.Data;
+using NeonHackathon.Domain.Interfaces;
 
 namespace NeonHackathon.Api
 {
@@ -25,6 +27,9 @@ namespace NeonHackathon.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
+
             services.AddControllers();
         }
 
